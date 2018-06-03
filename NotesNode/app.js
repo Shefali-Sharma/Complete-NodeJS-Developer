@@ -23,6 +23,6 @@ const notes = require('./notes.js');
 //console.log(_.isString(true));
 //console.log(_.isString('Shefali'));
 
-var filteredArray = _.uniq(['Shefali', 1, 'Shefali', 1, 2, 3, 4]);
+var filteredArray = _.uniq(['Sahil', 1, 'Shefali', 1, 2, 3, 4]);
 
 console.log(filteredArray);
