@@ -8,17 +8,17 @@ var getAll = () => {
   console.log('Getting all Notes');
 };
 
-var readNote = () => {
-  console.log('Reading Note');
+var getNote = (title) => {
+  console.log('Getting Note', title);
 };
 
-var removeNote = () => {
-  console.log('Removing Note');
+var removeNote = (title) => {
+  console.log('Removing Note', title);
 };
 
 module.exports = {
   addNote: addNote, //Or we can simply just write addNote - both are equivalent
   getAll, //Or we could have written getAll : getAll
-  readNote,
+  getNote,
   removeNote
 };
