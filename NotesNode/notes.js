@@ -21,8 +21,8 @@ var addNote = (title, body) => {
     title,
     body
   };
-  var duplicateNotes = notes.filter((note) => note.title == title);
-  if(duplicateNotes.length == 0){
+  var duplicateNotes = notes.filter((note) => note.title === title);
+  if(duplicateNotes.length === 0){
     notes.push(note);
     saveNotes(notes);
     return note;
@@ -35,7 +35,12 @@ var getAll = () => {
 };
 
 var getNote = (title) => {
-  console.log('Getting Note', title);
+  var notes = fetchNotes();
+  var note = {
+    title
+  };
+  var myNote =  notes.filter((note) => note.title === title);
+  return myNote[0];
 };
 
 var removeNote = (title) => {
@@ -43,15 +48,22 @@ var removeNote = (title) => {
   var note = {
     title
   };
-  var notesAfterDeletion = notes.filter((note) => note.title != title);
+  var notesAfterDeletion = notes.filter((note) => note.title !== title);
   saveNotes(notesAfterDeletion);
 
   return notes.length !== notesAfterDeletion.length;
+};
+
+var logNote = (note) => {
+  console.log('--');
+  console.log("Title: " + note.title);
+  console.log("Body: " + note.body);
 };
 
 module.exports = {
   addNote: addNote, //Or we can simply just write addNote - both are equivalent
   getAll, //Or we could have written getAll : getAll
   getNote,
-  removeNote
+  removeNote,
+  logNote
 };
