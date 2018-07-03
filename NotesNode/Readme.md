@@ -25,3 +25,19 @@ Once the page opens, click on:
 * Open dedicated Dev Tools for Node
 
 'Developer Tools - Node' will open up.
+
+## nodemon
+Nodemon runs nodejs script automatically everytime there is a change made.
+
+### Installation
+#### Command: npm install nodemon -g
+
+ * '-g’ flag is global — ‘-g’ instead of ’save'
+* If an error is encountered where the nodemon doesn't get installed because of permission problem, use 'sudo' in the beginning. This can be done for all commands which fail to run because of permission problems.
+Eg: sudo npm install nodemon -g
+
+### Run Nodemon
+Instead on 'node', simply use 'nodemon' to run the application
+#### Command: nodemon <filename.js>
+#### Command: nodemon inspect <filename.js>
+#### Command: nodemon --inspect-brk <filename.js>
