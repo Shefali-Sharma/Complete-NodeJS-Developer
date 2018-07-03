@@ -2,7 +2,7 @@
 #### Command: node inspect <filename.js>
 To leave debug mode: Ctrl+C (twice) or type command '.exit'
 
-Commands in debug mode:
+#### Commands in debug mode:
 
 * list(10)    :   List 10 lines
 * n           :   Move to next line
@@ -38,6 +38,7 @@ Eg: sudo npm install nodemon -g
 
 ### Run Nodemon
 Instead on 'node', simply use 'nodemon' to run the application
-#### Command: nodemon <filename.js>
-#### Command: nodemon inspect <filename.js>
-#### Command: nodemon --inspect-brk <filename.js>
+#### Commands
+* nodemon <filename.js>
+* nodemon inspect <filename.js>
+* nodemon --inspect-brk <filename.js>
