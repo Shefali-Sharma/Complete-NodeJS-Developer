@@ -1,7 +1,23 @@
 # Complete NodeJS Developer
 
+## Version
+Get currently installed npm version.
+This can also be used to find out in npm is installed, as the command will not work if npm was not installed.
+#### Command:
+```
+npm -v
+```
+
+## NPM Init
+Used to create package.json for the current application
+#### Command:
+```
+Npm init
+```
+Once the command is run, you can input ‘description’ (of the application), ‘author’ (give Author's name), and other details. To finish and confirm the information that is input, type ‘yes’ and press enter. This will create 'package.json' with all the details entered in the fields above.
+
 ## Yargs
-Documnetation poage for yargs: https://www.npmjs.com/package/yargs
+Documentation page for yargs: https://www.npmjs.com/package/yargs
 
 ### methods
 #### .command
@@ -31,7 +47,7 @@ Ex:
 node app.js -t="flag title" --body="flag title body"
 ```
 ## nodemon
-Nodemon runs nodejs script automatically everytime there is a change made.
+Nodemon runs nodejs script automatically every-time there is a change made.
 
 ### Installation
 #### Command:
