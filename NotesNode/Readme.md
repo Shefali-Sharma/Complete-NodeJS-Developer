@@ -13,7 +13,7 @@ To leave debug mode: Ctrl+C (twice) or type command '.exit'
 We can use 'nodemon' with the debugger to automatically start the app every-time we make a change to the app. And if we have 'debugger;' anywhere in the code, then our application will automatically stop at the first 'debugger;' found when application is restarted by nodemon.
 
 ## Debugging using Chrome Developer Tools
-Command: node --inspect-brk <filename.js>
+#### Command: node --inspect-brk <filename.js>
 
 * --inspect-brk : This tell the node that we want to run the inspect mode but we don't want to run via the Command Line (i.e. commands like 'n' and 'c' won't work and output won't be displayed on the terminal). And we also want to break ('-brk') after the first line.
 
