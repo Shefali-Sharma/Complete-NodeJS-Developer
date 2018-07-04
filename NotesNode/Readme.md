@@ -30,3 +30,7 @@ Once the page opens, click on:
 * Open dedicated Dev Tools for Node
 
 'Developer Tools - Node' will open up.
+
+### Arraow Functions Vs. Regular Functions
+* Arrow functions do not allow us to access variables, while regular functions do.
+* You cannot pass arguments to arrow functions.
