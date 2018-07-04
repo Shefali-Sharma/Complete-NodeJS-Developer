@@ -1,5 +1,11 @@
 # Complete NodeJS Developer
 
+## Run Application
+To run the node app, you simply use the command:
+```
+node <filename.js>
+```
+
 ## Version
 Get currently installed npm version.
 This can also be used to find out in npm is installed, as the command will not work if npm was not installed.
