@@ -42,7 +42,17 @@ When trying to use request, if you encounter the error as shown above (for any U
 
 9. Choose 'API key' which will generate the API key for you. Copy the key value to the clipboard.
 
-10. Change the request URL by adding a "key" query string. That would be something like the following. Note I've added "&" to separate the key value pairs. The new key value pair is "key" for the key and the API Key from Google for the value: 
+10. Change the request URL by adding a "key" query string. That would be something like the following. Note I've added "&" to separate the key value pairs. The new key value pair is "key" for the key and the API Key from Google for the value:
 https://maps.googleapis.com/maps/api/geocode/json?address=1301+lombard+st+philadelphia&key=YOURKEYHERE
 
 11. The request should work without any errors.
+
+
+## Special Notes
+* In ```app.js``` inside :
+```argv = yargs
+  .options({
+    a:{}
+    })
+```
+'a' is short for address.
