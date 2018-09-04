@@ -47,6 +47,9 @@ https://maps.googleapis.com/maps/api/geocode/json?address=1301+lombard+st+philad
 
 11. The request should work without any errors.
 
+## Forecast.io
+Go to ```https://darksky.net/dev``` and create a free developer account.
+Get API Key/ Secret key and 'Forecast Request' from: ```https://darksky.net/dev/docs```
 
 ## Special Notes
 * In ```app.js``` inside :
