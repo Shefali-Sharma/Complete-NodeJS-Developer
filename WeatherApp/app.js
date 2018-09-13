@@ -29,4 +29,10 @@ const argv = yargs
 // https://api.darksky.net/forecast/ac9432701acb2c51c7945d5dcc0e7bf7/39.9350642,-75.1516194
 
 
-weather.getWeather(39.9350642, -75.1516194);
+weather.getWeather(39.9350642, -75.1516194, (error, weatherResults) => {
+  if(errorMessage){
+    console.log(errorMessage);
+  }else{
+    console.log(JSON.stringify(weatherResults, undefined, 2));
+  }
+});
