@@ -1,18 +1,15 @@
-const request = require('request')
+const request = require('request');
 
-var getWeather = (latitude, longitude, callback) => {
+var getWeather = (lat, lng, callback) => {
   request({
-    url: 'https://api.darksky.net/forecast/ac9432701acb2c51c7945d5dcc0e7bf7/' + latitude + ',' + longitude,
-    json:true
-  },(error, response, body) => {
-    if(error) {
-      callback('Unable to connect to Forecase.io server.');
-    }
-    else if (response.statusCode == 400){
+    url: 'https://api.forecast.io/forecast/YOURKEY/' + lat +',' + lng,
+    json: true
+  }, (error, response, body) => {
+    if (error) {
+      callback('Unable to connect to Forecast.io server.');
+    } else if (response.statusCode === 400) {
       callback('Unable to fetch weather.');
-    }
-    if(response.statusCode === 200)
-    {
+    } else if (response.statusCode === 200) {
       callback(undefined, {
         temperature: body.currently.temperature,
         apparentTemperature: body.currently.apparentTemperature
@@ -21,6 +18,4 @@ var getWeather = (latitude, longitude, callback) => {
   });
 };
 
-module.exports = {
-  getWeather
-};
+module.exports.getWeather = getWeather;
