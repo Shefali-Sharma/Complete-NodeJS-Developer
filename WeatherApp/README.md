@@ -59,3 +59,13 @@ Get API Key/ Secret key and 'Forecast Request' from: ```https://darksky.net/dev/
     })
 ```
 'a' is short for address.
+
+## npm Axios
+For documentation on axios, visit: ```https://www.npmjs.com/package/axios```
+
+### Installing axios
+npm install axios@0.18.0 --save
+* At the time ```0.18.0``` was the latest version. Go ahead and install the latest version. Find version info on the Documentation url.
+
+
+
